@@ -5,16 +5,14 @@ Conta contaRoberta = Conta("Roberta", 2000 );
 
 List<Conta> contas = <Conta>[contaMatheus, contaRoberta];
 
-print(contaMatheus.titular);
-print(contaMatheus.saldo);
-
-print(contaRoberta.titular);
-print(contaRoberta.saldo);
-
 contaRoberta.saldo = 5000;
 
-print(contaRoberta.saldo);
- 
+for (Conta conta in contas){
+print(conta.titular);
+print(conta.saldo);
+}
+
+
 }
 
 class Conta{
