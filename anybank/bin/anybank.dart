@@ -1,7 +1,7 @@
 void main() {
 
-Conta contaMatheus = Conta("Matheus", 1000 );
-Conta contaRoberta = Conta("Roberta", 2000 );
+Conta contaMatheus = Conta(titular:"Matheus", saldo: 1000 );
+Conta contaRoberta = Conta(titular:"Roberta",saldo:2000 );
 
 List<Conta> contas = <Conta>[contaMatheus, contaRoberta];
 
@@ -12,14 +12,15 @@ print(conta.titular);
 print(conta.saldo);
 }
 
-
 }
 
+
+
 class Conta{
-  String titular;
-  double saldo;
+  String? titular;
+  double? saldo;
 
 //FUNÇÃO CONSTRUTORA
-  Conta(this.titular, this.saldo);
+  Conta({this.titular,this.saldo});
 }
 
