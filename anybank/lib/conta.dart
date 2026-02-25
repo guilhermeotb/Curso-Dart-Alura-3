@@ -46,3 +46,16 @@ void calculaRendimento(){
   _saldo = _saldo*(1 + rendimento);
 }
 }
+
+class ContaSalario extends Conta {
+  String cnpjEmpresa;
+  String nomeEmpresa;
+  
+  ContaSalario(super.titular, super._salario, this.cnpjEmpresa, this.nomeEmpresa);
+  
+  void depositarSalario(double valorSalario){
+    _saldo += valorSalario;
+  print("O salário da $nomeEmpresa, de CNPJ $cnpjEmpresa no valor de R\$ $valorSalario foi depositado");
+  }
+
+}

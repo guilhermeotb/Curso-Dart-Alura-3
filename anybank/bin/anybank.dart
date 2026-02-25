@@ -6,6 +6,7 @@ Conta contaMatheus = Conta("Matheus",1000 );
 Conta contaRoberta = Conta("Roberta",2000 );
 ContaCorrente contaChris = ContaCorrente("Chris", 4000);
 ContaPoupanca contaDenise = ContaPoupanca("Denise", 4000);
+ContaSalario contaCatarina = ContaSalario("Catarina", 10000,"123456789", "Anybank");
 
 List<Conta> contas = <Conta>[contaMatheus, contaRoberta];
 
@@ -27,6 +28,9 @@ contaDenise.imprimeSaldo();
 contaDenise.enviar(4300);
 contaDenise.calculaRendimento();
 contaDenise.imprimeSaldo();
+
+contaCatarina.depositarSalario(5000);
+contaCatarina.imprimeSaldo();
 
 
 }
