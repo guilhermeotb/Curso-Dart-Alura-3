@@ -6,7 +6,7 @@ ContaCorrente contaChris = ContaCorrente("Chris", 4000);
 ContaPoupanca contaDenise = ContaPoupanca("Denise", 4000);
 ContaSalario contaCatarina = ContaSalario("Catarina", 10000,"123456789", "Anybank");
 ContaEmpresa contaMatheus =  ContaEmpresa("Matheus", 2000);
-ContaInvestimento contaRoberta = ContaInvestimento("Roberta", 2000 );
+ContaInvestimento contaRoberta = ContaInvestimento("Roberta", 4000);
 
 contaChris.imprimeSaldo();
 contaChris.enviar(4300);
